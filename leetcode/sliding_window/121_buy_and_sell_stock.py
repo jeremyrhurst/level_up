@@ -28,3 +28,18 @@
 #     1 <= prices.length <= 105
 #     0 <= prices[i] <= 104
 
+# All we need to do is keep track of the lowest value we have come across so far
+# Then for each new value we come across we check to see what the profit is and if it  
+# is greater than the max profit so far.
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        lowest = prices[0]
+        max_profit = 0
+        for price in prices:
+            if price < lowest:
+                lowest = price
+            profit = price - lowest
+            if profit > max_profit:
+                max_profit = profit
+        return max_profit
+
