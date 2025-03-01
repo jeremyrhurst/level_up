@@ -1,0 +1,26 @@
+[
+    {
+        "event_id": "E001",
+        "timestamp": "2025-02-12T10:30:00Z",
+        "yard_id": "Y001",
+        "trailer_id": "T123",
+        "event_type": "arrival",
+        "driver_id": "D045"
+    },
+    {
+        "event_id": "E002",
+        "timestamp": "2025-02-12T11:00:00Z",
+        "yard_id": "Y001",
+        "trailer_id": "T123",
+        "event_type": "departure",
+        "driver_id": "D045"
+    },
+    {
+        "event_id": "E003",
+        "timestamp": "2025-02-12T12:00:00Z",
+        "yard_id": "Y002",
+        "trailer_id": "T567",
+        "event_type": "arrival",
+        "driver_id": "D099"
+    }
+]
