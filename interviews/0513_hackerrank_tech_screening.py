@@ -48,3 +48,23 @@ def largestMagical(binString):
     # join all ans strings together, append to final ans
     # Also add to the result if not a good string
     return('')
+
+
+# Recursive solution
+class Solution:
+    def makeLargestSpecial(self, s: str) -> str:
+        l = 0
+        balance = 0
+        cur = []
+        for r in range(len(s)):
+            if s[r] == '1':
+                balance += 1
+            else:
+                balance -= 1
+            if balance == 0:
+                cur.append('1' + self.makeLargestSpecial(s[l+1:r])+'0')
+                l = r + 1
+        cur.sort(reverse=True)
+        return ''.join(cur)
+
+
