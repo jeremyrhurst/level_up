@@ -28,7 +28,7 @@ class Solution:
 # neetcode solution
 # Uses a stack to keep track of the car fleets
 # The stack is sorted in reverse order
-# If the current car is slower than the car at the top of the stack, then it is a new car fleet
+# If the current car is slower than the car at the top of the stack, then it is a new car fleeht
 class Solution:
     def carFleet(self, target: int, position: List[int], speed: List[int]) -> int:
         pair = [(p, s) for p, s in zip(position, speed)]
